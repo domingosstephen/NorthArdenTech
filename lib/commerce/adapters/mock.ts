@@ -11,11 +11,8 @@ import type {
   VariantSelection,
 } from "../types";
 
-// Next.js bundles JSON imports at build time — safe to import here.
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const catalog = require("@/data/catalog.json") as {
-  families: Family[];
-};
+import catalogJson from "@/data/catalog.json";
+const catalog = catalogJson as unknown as { families: Family[] };
 
 // ── In-memory cart (dev only) ───────────────────────────────────
 let _cart: Cart = { id: "mock-cart-001", items: [] };

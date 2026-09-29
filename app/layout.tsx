@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/components/providers/CartProvider";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { CartDrawer } from "@/components/layout/CartDrawer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +25,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${inter.variable} h-full`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <CartProvider>
+          {/* Header is an async RSC — safe as child of client CartProvider */}
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          {/* Bag drawer — reads cart context */}
+          <CartDrawer />
+        </CartProvider>
+      </body>
     </html>
   );
 }
