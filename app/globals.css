@@ -1,26 +1,72 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "../styles/tokens.css";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Expose tokens as Tailwind theme values */
+  --color-bg:           var(--bg);
+  --color-surface:      var(--surface);
+  --color-surface-dark: var(--surface-dark);
+  --color-ink:          var(--ink);
+  --color-ink-2:        var(--ink-2);
+  --color-line:         var(--line);
+  --color-accent:       var(--accent);
+  --color-accent-press: var(--accent-press);
+  --color-ok:           var(--ok);
+  --color-warn:         var(--warn);
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-tile: var(--radius-tile);
+  --radius-band: var(--radius-band);
+  --radius-pill: var(--radius-pill);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ───────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--text-body);
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Typography helpers ─────────────────────────────────────── */
+.type-display {
+  font-weight: 600;
+  letter-spacing: var(--tracking-hero);
+  line-height: var(--leading-display);
+}
+
+.type-body {
+  font-weight: 400;
+  letter-spacing: var(--tracking-body);
+  line-height: var(--leading-body);
+}
+
+/* Tabular numbers for prices, specs, battery % */
+.type-util {
+  font-feature-settings: "tnum" 1, "cv11" 1;
+  letter-spacing: var(--tracking-body);
+}
+
+/* ── Focus ring ─────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }

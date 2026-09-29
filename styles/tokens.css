@@ -1,0 +1,95 @@
+/* NorthArdenTech — Design Tokens (§2)
+   All CSS custom properties for colour, type, spacing, motion.
+   Imported by app/globals.css — never import directly into components.
+*/
+
+:root {
+  /* ── Colour ──────────────────────────────────────────────── */
+  --bg:           #FFFFFF;
+  --surface:      #F4F5F7;
+  --surface-dark: #0C0C0E;
+  --ink:          #121214;
+  --ink-2:        #62626B;
+  --line:         #E2E3E8;
+  --accent:       #0B5FD9;
+  --accent-press: #084BAE;
+  --ok:           #1E7F4E;
+  --warn:         #A15C00;
+  --focus:        #0B5FD9;
+
+  /* ── Typography ──────────────────────────────────────────── */
+  --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* type scale — desktop */
+  --text-hero: 80px;
+  --text-h1:   56px;
+  --text-h2:   40px;
+  --text-h3:   28px;
+  --text-h4:   21px;
+  --text-body: 17px;
+  --text-sm:   14px;
+  --text-xs:   12px;
+
+  --leading-display: 1.05;
+  --leading-body:    1.47;
+
+  --tracking-hero: -0.028em;
+  --tracking-h2:   -0.02em;
+  --tracking-body: -0.011em;
+
+  /* ── Spacing / layout ─────────────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  --section-pad-desktop: 128px;
+  --section-pad-mobile:  80px;
+
+  --max-w-content: 1200px;
+  --max-w-bleed:   1440px;
+  --gutter:        24px;
+
+  --radius-tile:   12px;
+  --radius-band:   18px;
+  --radius-pill:   980px;
+
+  --shadow-float: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+  /* ── Motion ──────────────────────────────────────────────── */
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 320ms;
+  --dur-4: 480ms;
+
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Reduce all motion except short opacity fades */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-1: 0ms;
+    --dur-2: 0ms;
+    --dur-3: 0ms;
+    --dur-4: 0ms;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  /* Allow opacity fades ≤ 120ms */
+  .motion-fade {
+    transition-duration: 120ms !important;
+  }
+}
