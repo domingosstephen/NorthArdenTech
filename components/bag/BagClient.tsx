@@ -1,23 +1,13 @@
 "use client";
 
-import { useTransition } from "react";
 import Link from "next/link";
 import { useCart } from "@/components/providers/CartProvider";
 import { Button, SpecRail } from "@/components/ui";
-import { createCheckoutUrl } from "@/app/actions/checkout";
 import type { CartItem } from "@/lib/commerce/types";
 
 export function BagClient() {
   const { items, itemCount, removeItem } = useCart();
   const subtotal = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
-  const [isPending, startTransition] = useTransition();
-
-  function handleCheckout() {
-    startTransition(async () => {
-      const url = await createCheckoutUrl(items);
-      window.location.href = url;
-    });
-  }
 
   if (itemCount === 0) {
     return (
@@ -71,16 +61,13 @@ export function BagClient() {
             </span>
           </div>
 
-          <Button
-            variant="primary"
-            className="w-full"
-            loading={isPending}
-            onClick={handleCheckout}
-          >
-            Check Out
-          </Button>
+          <Link href="/checkout" className="block">
+            <Button variant="primary" className="w-full">
+              Check Out
+            </Button>
+          </Link>
           <p className="text-[12px] text-ink-2 text-center">
-            Secure checkout via Shopify.
+            Secure checkout. Payment processed by Stripe.
           </p>
         </div>
       </aside>
