@@ -1,13 +1,23 @@
 "use client";
 
+import { useTransition } from "react";
 import Link from "next/link";
 import { useCart } from "@/components/providers/CartProvider";
 import { Button, SpecRail } from "@/components/ui";
+import { createCheckoutUrl } from "@/app/actions/checkout";
 import type { CartItem } from "@/lib/commerce/types";
 
 export function BagClient() {
   const { items, itemCount, removeItem } = useCart();
   const subtotal = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
+  const [isPending, startTransition] = useTransition();
+
+  function handleCheckout() {
+    startTransition(async () => {
+      const url = await createCheckoutUrl(items);
+      window.location.href = url;
+    });
+  }
 
   if (itemCount === 0) {
     return (
@@ -61,12 +71,16 @@ export function BagClient() {
             </span>
           </div>
 
-          {/* Checkout → Shopify hosted checkout (step 9). For now links to /bag. */}
-          <Button variant="primary" className="w-full" disabled>
+          <Button
+            variant="primary"
+            className="w-full"
+            loading={isPending}
+            onClick={handleCheckout}
+          >
             Check Out
           </Button>
           <p className="text-[12px] text-ink-2 text-center">
-            Secure checkout via Shopify. Connects in step 9.
+            Secure checkout via Shopify.
           </p>
         </div>
       </aside>
