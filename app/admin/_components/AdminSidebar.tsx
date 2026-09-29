@@ -15,8 +15,8 @@ const NAV: NavItem[] = [
   { label: "Dashboard", href: "/admin" },
   { label: "Catalog", href: "/admin/catalog" },
   { label: "Inventory", href: "/admin/inventory" },
-  { label: "Orders", href: "/admin/orders", disabled: true, note: "step 12" },
-  { label: "Audit log", href: "/admin/audit", disabled: true, note: "owner only" },
+  { label: "Orders", href: "/admin/orders" },
+  { label: "Audit log", href: "/admin/audit" },
 ];
 
 export function AdminSidebar({ role }: { role?: string }) {

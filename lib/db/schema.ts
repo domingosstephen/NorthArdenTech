@@ -175,6 +175,7 @@ export const orders = pgTable("orders", {
   stripeTaxTransactionId: varchar("stripe_tax_transaction_id", { length: 80 }),
   /** "normal" | "elevated" | "highest" from Stripe Radar */
   riskLevel: varchar("risk_level", { length: 20 }).notNull().default("normal"),
+  internalNotes: text("internal_notes"),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").notNull().defaultNow(),
 }, (t) => [
