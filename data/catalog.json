@@ -1,0 +1,418 @@
+{
+  "_schema": "1.0",
+  "_note": "Placeholder seed. ALL [SPEC], [HEX], [IMAGE], [DATE] values and every price (price:0, placeholder:true) must be supplied and verified by the client before launch. Variant set shown is representative — client must supply the full storage × finish × condition matrix. See BUILD-SPEC §4 and open items §12.",
+  "families": [
+
+    {
+      "slug": "iphone-14",
+      "name": "iPhone 14",
+      "generation": 14,
+      "tier": "base",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-14--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-14-plus",
+      "name": "iPhone 14 Plus",
+      "generation": 14,
+      "tier": "plus",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-14-plus--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-plus--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-plus--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-plus--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-14-pro",
+      "name": "iPhone 14 Pro",
+      "generation": 14,
+      "tier": "pro",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-14-pro--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-pro--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-pro--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-pro--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-14-pro-max",
+      "name": "iPhone 14 Pro Max",
+      "generation": 14,
+      "tier": "pro-max",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-14-pro-max--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-pro-max--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-pro-max--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-14-pro-max--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-15",
+      "name": "iPhone 15",
+      "generation": 15,
+      "tier": "base",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-15--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-15-plus",
+      "name": "iPhone 15 Plus",
+      "generation": 15,
+      "tier": "plus",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-15-plus--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-plus--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-plus--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-plus--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-15-pro",
+      "name": "iPhone 15 Pro",
+      "generation": 15,
+      "tier": "pro",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-15-pro--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-pro--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-pro--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-pro--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-15-pro-max",
+      "name": "iPhone 15 Pro Max",
+      "generation": 15,
+      "tier": "pro-max",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-15-pro-max--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-pro-max--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-pro-max--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-15-pro-max--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-16e",
+      "name": "iPhone 16e",
+      "generation": 16,
+      "tier": "e",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-16e--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16e--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16e--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16e--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-16",
+      "name": "iPhone 16",
+      "generation": 16,
+      "tier": "base",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-16--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-16-plus",
+      "name": "iPhone 16 Plus",
+      "generation": 16,
+      "tier": "plus",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-16-plus--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-plus--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-plus--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-plus--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-16-pro",
+      "name": "iPhone 16 Pro",
+      "generation": 16,
+      "tier": "pro",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-16-pro--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-pro--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-pro--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-pro--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-16-pro-max",
+      "name": "iPhone 16 Pro Max",
+      "generation": 16,
+      "tier": "pro-max",
+      "status": "discontinued",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-16-pro-max--f1--sa--excellent", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-pro-max--f1--sa--good",      "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-pro-max--f1--sb--excellent", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "excellent", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" },
+        { "id": "iphone-16-pro-max--f1--sb--good",      "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "good",      "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "batteryFloor": "[SPEC]", "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-17e",
+      "name": "iPhone 17e",
+      "generation": 17,
+      "tier": "e",
+      "status": "current",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-17e--f1--sa--new", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" },
+        { "id": "iphone-17e--f1--sb--new", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-17",
+      "name": "iPhone 17",
+      "generation": 17,
+      "tier": "base",
+      "status": "current",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-17--f1--sa--new", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" },
+        { "id": "iphone-17--f1--sb--new", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-17-air",
+      "name": "iPhone 17 Air",
+      "generation": 17,
+      "tier": "air",
+      "status": "current",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-17-air--f1--sa--new", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" },
+        { "id": "iphone-17-air--f1--sb--new", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-17-pro",
+      "name": "iPhone 17 Pro",
+      "generation": 17,
+      "tier": "pro",
+      "status": "current",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-17-pro--f1--sa--new", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" },
+        { "id": "iphone-17-pro--f1--sb--new", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-17-pro-max",
+      "name": "iPhone 17 Pro Max",
+      "generation": 17,
+      "tier": "pro-max",
+      "status": "current",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-17-pro-max--f1--sa--new", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" },
+        { "id": "iphone-17-pro-max--f1--sb--new", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-18-pro",
+      "name": "iPhone 18 Pro",
+      "generation": 18,
+      "tier": "pro",
+      "status": "current",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-18-pro--f1--sa--new", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" },
+        { "id": "iphone-18-pro--f1--sb--new", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-18-pro-max",
+      "name": "iPhone 18 Pro Max",
+      "generation": 18,
+      "tier": "pro-max",
+      "status": "current",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 3]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 4]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-18-pro-max--f1--sa--new", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" },
+        { "id": "iphone-18-pro-max--f1--sb--new", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" }
+      ]
+    },
+
+    {
+      "slug": "iphone-duo",
+      "name": "iPhone Duo",
+      "generation": 0,
+      "tier": "duo",
+      "status": "preorder",
+      "specs": { "chip": "[SPEC]", "display": "[SPEC]", "camera": "[SPEC]", "batteryVideoHrs": "[SPEC]", "weight": "[SPEC]", "connector": "[SPEC]", "releaseYear": "[SPEC]" },
+      "finishes": [
+        { "name": "[FINISH 1]", "hex": "[HEX]", "images": ["[IMAGE]"] },
+        { "name": "[FINISH 2]", "hex": "[HEX]", "images": ["[IMAGE]"] }
+      ],
+      "variants": [
+        { "id": "iphone-duo--f1--sa--new", "storage": "[STORAGE A]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" },
+        { "id": "iphone-duo--f1--sb--new", "storage": "[STORAGE B]", "finish": "[FINISH 1]", "condition": "new", "connectivity": "unlocked", "price": 0, "placeholder": true, "stock": 0, "shipsBy": "[DATE]" }
+      ]
+    }
+
+  ]
+}
