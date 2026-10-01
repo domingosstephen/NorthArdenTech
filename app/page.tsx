@@ -9,10 +9,28 @@ import { PrevGenGrid } from "@/components/home/PrevGenGrid";
 import { ServiceRow } from "@/components/home/ServiceRow";
 import { HomeFAQ } from "@/components/home/HomeFAQ";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://northardentech.com";
+const DESC =
+  "Shop iPhone — new and pre-owned, every model from 14 to 18 Pro Max, with condition and battery health shown upfront.";
+
+export const metadata: Metadata = {
   title: "NorthArdenTech — Every iPhone, graded honestly",
-  description:
-    "Shop iPhone — new and pre-owned, every model from 14 to Duo, with condition and battery health shown upfront.",
+  description: DESC,
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    title: "NorthArdenTech — Every iPhone, graded honestly",
+    description: DESC,
+    url: SITE_URL,
+    type: "website",
+    siteName: "NorthArdenTech",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NorthArdenTech — Every iPhone, graded honestly",
+    description: DESC,
+  },
 };
 
 export default async function HomePage() {
@@ -36,7 +54,7 @@ export default async function HomePage() {
     <main>
       <TrustStrip />
       <Hero />
-      <DuoBand duo={duoFamily} />
+      {duoFamily && <DuoBand duo={duoFamily} />}
       <LineupRail families={railFamilies} />
       <TwoPaths />
       <ConditionPromise />
