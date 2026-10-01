@@ -1,10 +1,28 @@
 import Link from "next/link";
 import { SectionReveal } from "@/components/pdp/SectionReveal";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://northardentech.com";
+const DESC =
+  "How NorthArdenTech grades pre-owned iPhone — five conditions, battery floors, what we test.";
+
+export const metadata: Metadata = {
   title: "Pre-owned guide",
-  description:
-    "How NorthArdenTech grades pre-owned iPhone — five conditions, battery floors, what we test.",
+  description: DESC,
+  alternates: { canonical: `${SITE_URL}/pre-owned` },
+  openGraph: {
+    title: "Pre-owned iPhone guide | NorthArdenTech",
+    description: DESC,
+    url: `${SITE_URL}/pre-owned`,
+    type: "website",
+    siteName: "NorthArdenTech",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pre-owned iPhone guide | NorthArdenTech",
+    description: DESC,
+  },
 };
 
 const GRADES = [

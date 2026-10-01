@@ -13,13 +13,34 @@ const inter = Inter({
   display: "swap",
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://northardentech.com";
+const DEFAULT_DESC =
+  "Shop iPhone — new and pre-owned, every model from 14 to Duo, with condition and battery health shown upfront.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "NorthArdenTech",
     template: "%s | NorthArdenTech",
   },
-  description:
-    "Shop iPhone — new and pre-owned, every model from 14 to Duo, with condition and battery health shown upfront.",
+  description: DEFAULT_DESC,
+  openGraph: {
+    type: "website",
+    siteName: "NorthArdenTech",
+    title: "NorthArdenTech",
+    description: DEFAULT_DESC,
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NorthArdenTech",
+    description: DEFAULT_DESC,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

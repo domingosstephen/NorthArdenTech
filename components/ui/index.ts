@@ -27,3 +27,5 @@ export type { SheetProps } from "./Sheet";
 
 export { Tooltip } from "./Tooltip";
 export type { TooltipProps } from "./Tooltip";
+
+export { DeviceSilhouette } from "./DeviceSilhouette";

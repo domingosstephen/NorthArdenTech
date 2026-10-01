@@ -5,6 +5,7 @@ import { db } from "@/lib/db";
 import { inventory, units, variants, auditLog, staff } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
+import { encryptImei } from "@/lib/crypto/imei";
 
 async function requireStaff() {
   const session = await auth();
@@ -60,6 +61,8 @@ export interface UnitIntakeInput {
   variantId: string;
   batteryPct: number;
   gradeNotes?: string;
+  /** Plain-text IMEI — encrypted server-side before storage */
+  imei?: string;
 }
 
 export async function createUnit(input: UnitIntakeInput) {
@@ -84,12 +87,23 @@ export async function createUnit(input: UnitIntakeInput) {
   if (!variant) throw new Error("Variant not found");
   if (variant.condition === "new") throw new Error("Units are for pre-owned only");
 
+  // Validate and encrypt IMEI if provided
+  let imeiEncrypted: string | null = null;
+  if (input.imei) {
+    const clean = input.imei.replace(/\s/g, "");
+    if (!/^\d{14,16}$/.test(clean)) {
+      throw new Error("IMEI must be 14–16 digits.");
+    }
+    imeiEncrypted = encryptImei(clean);
+  }
+
   const [unit] = await db
     .insert(units)
     .values({
       variantId: input.variantId,
       batteryPct: input.batteryPct,
       gradeNotes: input.gradeNotes ?? null,
+      imeiEncrypted,
       status: "available",
     })
     .returning({ id: units.id });

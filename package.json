@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "DB_SKIP=1 playwright test --grep-invert \"@db|@auth|@stripe\""
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^1.11.3",
@@ -14,6 +16,8 @@
     "@react-email/components": "^1.0.12",
     "@stripe/react-stripe-js": "^6.12.0",
     "@stripe/stripe-js": "^9.17.0",
+    "@upstash/ratelimit": "^2.2.0",
+    "@upstash/redis": "^1.39.0",
     "drizzle-orm": "^0.45.3",
     "motion": "^13.4.4",
     "next": "16.3.6",
@@ -25,6 +29,7 @@
     "stripe": "^22.6.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

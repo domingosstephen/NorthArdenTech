@@ -2,11 +2,28 @@ import { notFound } from "next/navigation";
 import { commerce } from "@/lib/commerce";
 import { PDPClient } from "@/components/pdp/PDPClient";
 import { SectionReveal } from "@/components/pdp/SectionReveal";
+import { buildDuoJsonLd, jsonLdScript } from "@/lib/seo/jsonLd";
+import type { Metadata } from "next";
 
-export const metadata = {
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://northardentech.com";
+
+export const metadata: Metadata = {
   title: "iPhone Duo",
   description:
-    "Apple's first foldable iPhone. Pre-order today — every storage and finish, unlocked.",
+    "Apple's first foldable iPhone. Pre-order today from NorthArdenTech — every storage and finish, unlocked.",
+  openGraph: {
+    title: "iPhone Duo | NorthArdenTech",
+    description: "Apple's first foldable iPhone. Pre-order today — unlocked.",
+    url: `${SITE_URL}/iphone-duo`,
+    type: "website",
+    siteName: "NorthArdenTech",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "iPhone Duo | NorthArdenTech",
+    description: "Apple's first foldable iPhone. Pre-order today — unlocked.",
+  },
+  alternates: { canonical: `${SITE_URL}/iphone-duo` },
 };
 
 export default async function IPhoneDuoPage() {
@@ -24,8 +41,14 @@ export default async function IPhoneDuoPage() {
   const prices = duo.variants.filter((v) => !v.placeholder && v.price > 0).map((v) => v.price);
   const lowestPrice = prices.length > 0 ? `From $${Math.min(...prices).toLocaleString()}` : "From $[PRICE]";
 
+  const jsonLd = buildDuoJsonLd({ family: duo, siteUrl: SITE_URL });
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(jsonLd) }}
+      />
       {/* ── Dark hero ─────────────────────────────────────────────── */}
       <section
         className="py-16 md:py-24"

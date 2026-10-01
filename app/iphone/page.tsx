@@ -2,10 +2,28 @@ import { commerce } from "@/lib/commerce";
 import { ShopClient } from "@/components/shop/ShopClient";
 import { TrustStrip } from "@/components/layout/TrustStrip";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://northardentech.com";
+const DESC =
+  "Every iPhone from 14 to Duo — new and pre-owned, every model, storage, and condition with battery health shown upfront.";
+
+export const metadata: Metadata = {
   title: "Shop iPhone",
-  description:
-    "Every iPhone from 14 to Duo — new and pre-owned, every model, storage, and condition with battery health shown upfront.",
+  description: DESC,
+  alternates: { canonical: `${SITE_URL}/iphone` },
+  openGraph: {
+    title: "Shop iPhone | NorthArdenTech",
+    description: DESC,
+    url: `${SITE_URL}/iphone`,
+    type: "website",
+    siteName: "NorthArdenTech",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shop iPhone | NorthArdenTech",
+    description: DESC,
+  },
 };
 
 export default async function ShopAllPage() {

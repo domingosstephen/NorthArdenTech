@@ -1,9 +1,27 @@
 import Link from "next/link";
 import { SectionReveal } from "@/components/pdp/SectionReveal";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://northardentech.com";
+const DESC = "Shipping, returns, warranty, payment, and order status — NorthArdenTech support.";
+
+export const metadata: Metadata = {
   title: "Support",
-  description: "Shipping, returns, warranty, payment, and order status — NorthArdenTech support.",
+  description: DESC,
+  alternates: { canonical: `${SITE_URL}/support` },
+  openGraph: {
+    title: "Support | NorthArdenTech",
+    description: DESC,
+    url: `${SITE_URL}/support`,
+    type: "website",
+    siteName: "NorthArdenTech",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Support | NorthArdenTech",
+    description: DESC,
+  },
 };
 
 const TILES = [
