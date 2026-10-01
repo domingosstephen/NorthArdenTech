@@ -3,10 +3,10 @@
 // Stripe redirects here after payment: /order/confirm?pi=pi_xxx
 // We poll until the webhook creates the order, then redirect to /order/[number].
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-export default function OrderConfirmRedirect() {
+function OrderConfirmInner() {
   const router = useRouter();
   const params = useSearchParams();
   const pi = params.get("pi");
@@ -47,5 +47,20 @@ export default function OrderConfirmRedirect() {
         <p className="text-[15px] text-ink-2">This takes just a moment.</p>
       </div>
     </main>
+  );
+}
+
+export default function OrderConfirmRedirect() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen bg-bg flex items-center justify-center">
+        <div className="text-center space-y-3">
+          <p className="text-[18px] font-semibold text-ink">Confirming your order…</p>
+          <p className="text-[15px] text-ink-2">This takes just a moment.</p>
+        </div>
+      </main>
+    }>
+      <OrderConfirmInner />
+    </Suspense>
   );
 }

@@ -1,9 +1,15 @@
+export const dynamic = "force-dynamic";
+
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { orders } from "@/lib/db/schema";
 import { eq, and } from "drizzle-orm";
+import { checkLookupRateLimit } from "@/lib/ratelimit";
 
 export async function GET(req: NextRequest) {
+  const rateLimited = await checkLookupRateLimit(req);
+  if (rateLimited) return rateLimited;
+
   const email = req.nextUrl.searchParams.get("email")?.toLowerCase().trim();
   const number = req.nextUrl.searchParams.get("number")?.toUpperCase().trim();
 

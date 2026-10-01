@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import {
@@ -9,6 +11,7 @@ import {
 } from "@/lib/db/schema";
 import { stripe } from "@/lib/stripe";
 import { eq, and, gt, inArray } from "drizzle-orm";
+import { checkCheckoutRateLimit } from "@/lib/ratelimit";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -34,6 +37,9 @@ interface CheckoutBody {
 // ── POST /api/checkout ────────────────────────────────────────────────────────
 
 export async function POST(req: NextRequest) {
+  const rateLimited = await checkCheckoutRateLimit(req);
+  if (rateLimited) return rateLimited;
+
   let body: CheckoutBody;
   try {
     body = await req.json();
