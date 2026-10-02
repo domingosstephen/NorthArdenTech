@@ -22,42 +22,42 @@
           "name": "Midnight",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14.jpg"
           ]
         },
         {
           "name": "Starlight",
           "hex": "#F5F0E8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14.jpg"
           ]
         },
         {
           "name": "Blue",
           "hex": "#A1BFD3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14.jpg"
           ]
         },
         {
           "name": "Purple",
           "hex": "#C6BDD4",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14.jpg"
           ]
         },
         {
           "name": "Product Red",
           "hex": "#BE0000",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14.jpg"
           ]
         },
         {
           "name": "Yellow",
           "hex": "#FAE56A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14.jpg"
           ]
         }
       ],
@@ -480,42 +480,42 @@
           "name": "Midnight",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14-plus.jpg"
           ]
         },
         {
           "name": "Starlight",
           "hex": "#F5F0E8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14-plus.jpg"
           ]
         },
         {
           "name": "Blue",
           "hex": "#A1BFD3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14-plus.jpg"
           ]
         },
         {
           "name": "Purple",
           "hex": "#C6BDD4",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14-plus.jpg"
           ]
         },
         {
           "name": "Product Red",
           "hex": "#BE0000",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14-plus.jpg"
           ]
         },
         {
           "name": "Yellow",
           "hex": "#FAE56A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_a3afa9da-f115-4a37-9ebc-6df335ac686f.jpg"
+            "/products/iphone-14-plus.jpg"
           ]
         }
       ],
@@ -938,28 +938,28 @@
           "name": "Space Black",
           "hex": "#2C2C2E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_Pro_-_Black_-_Overlap_Trans-cropped_e1d92c7c-83f7-4239-afab-86670e630c78.jpg"
+            "/products/iphone-14-pro.jpg"
           ]
         },
         {
           "name": "Silver",
           "hex": "#E3E4DF",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_Pro_-_Black_-_Overlap_Trans-cropped_e1d92c7c-83f7-4239-afab-86670e630c78.jpg"
+            "/products/iphone-14-pro.jpg"
           ]
         },
         {
           "name": "Gold",
           "hex": "#F5E6C8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_Pro_-_Black_-_Overlap_Trans-cropped_e1d92c7c-83f7-4239-afab-86670e630c78.jpg"
+            "/products/iphone-14-pro.jpg"
           ]
         },
         {
           "name": "Deep Purple",
           "hex": "#595279",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_Pro_-_Black_-_Overlap_Trans-cropped_e1d92c7c-83f7-4239-afab-86670e630c78.jpg"
+            "/products/iphone-14-pro.jpg"
           ]
         }
       ],
@@ -1338,28 +1338,28 @@
           "name": "Space Black",
           "hex": "#2C2C2E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_Pro_Max_-_Black_-_Overlap_Trans-cropped_3ae47622-9576-4b97-82b3-4d5709e1e28d.jpg"
+            "/products/iphone-14-pro-max.jpg"
           ]
         },
         {
           "name": "Silver",
           "hex": "#E3E4DF",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_Pro_Max_-_Black_-_Overlap_Trans-cropped_3ae47622-9576-4b97-82b3-4d5709e1e28d.jpg"
+            "/products/iphone-14-pro-max.jpg"
           ]
         },
         {
           "name": "Gold",
           "hex": "#F5E6C8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_Pro_Max_-_Black_-_Overlap_Trans-cropped_3ae47622-9576-4b97-82b3-4d5709e1e28d.jpg"
+            "/products/iphone-14-pro-max.jpg"
           ]
         },
         {
           "name": "Deep Purple",
           "hex": "#595279",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_14_Pro_Max_-_Black_-_Overlap_Trans-cropped_3ae47622-9576-4b97-82b3-4d5709e1e28d.jpg"
+            "/products/iphone-14-pro-max.jpg"
           ]
         }
       ],
@@ -1738,35 +1738,35 @@
           "name": "Black",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15.jpg"
           ]
         },
         {
           "name": "Blue",
           "hex": "#9DB8CA",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15.jpg"
           ]
         },
         {
           "name": "Green",
           "hex": "#B4CBB1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15.jpg"
           ]
         },
         {
           "name": "Yellow",
           "hex": "#F4E58D",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15.jpg"
           ]
         },
         {
           "name": "Pink",
           "hex": "#E8C3BB",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15.jpg"
           ]
         }
       ],
@@ -2123,35 +2123,35 @@
           "name": "Black",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15-plus.jpg"
           ]
         },
         {
           "name": "Blue",
           "hex": "#9DB8CA",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15-plus.jpg"
           ]
         },
         {
           "name": "Green",
           "hex": "#B4CBB1",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15-plus.jpg"
           ]
         },
         {
           "name": "Yellow",
           "hex": "#F4E58D",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15-plus.jpg"
           ]
         },
         {
           "name": "Pink",
           "hex": "#E8C3BB",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0008/9296/0821/files/iPhone_15_-_Blue_-_Overlap_Trans-cropped.jpg"
+            "/products/iphone-15-plus.jpg"
           ]
         }
       ],
@@ -2508,28 +2508,28 @@
           "name": "Natural Titanium",
           "hex": "#B0A99A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-15-pro.png"
+            "/products/iphone-15-pro.png"
           ]
         },
         {
           "name": "Blue Titanium",
           "hex": "#4A6585",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-15-pro.png"
+            "/products/iphone-15-pro.png"
           ]
         },
         {
           "name": "White Titanium",
           "hex": "#D4CFC9",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-15-pro.png"
+            "/products/iphone-15-pro.png"
           ]
         },
         {
           "name": "Black Titanium",
           "hex": "#2D2D2D",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-15-pro.png"
+            "/products/iphone-15-pro.png"
           ]
         }
       ],
@@ -2908,28 +2908,28 @@
           "name": "Natural Titanium",
           "hex": "#B0A99A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-15-pro-max.png"
+            "/products/iphone-15-pro-max.png"
           ]
         },
         {
           "name": "Blue Titanium",
           "hex": "#4A6585",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-15-pro-max.png"
+            "/products/iphone-15-pro-max.png"
           ]
         },
         {
           "name": "White Titanium",
           "hex": "#D4CFC9",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-15-pro-max.png"
+            "/products/iphone-15-pro-max.png"
           ]
         },
         {
           "name": "Black Titanium",
           "hex": "#2D2D2D",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-15-pro-max.png"
+            "/products/iphone-15-pro-max.png"
           ]
         }
       ],
@@ -3220,14 +3220,14 @@
           "name": "Black",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16e.png"
+            "/products/iphone-16e.png"
           ]
         },
         {
           "name": "White",
           "hex": "#F5F0E8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16e.png"
+            "/products/iphone-16e.png"
           ]
         }
       ],
@@ -3342,35 +3342,35 @@
           "name": "Black",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16.png"
+            "/products/iphone-16.png"
           ]
         },
         {
           "name": "White",
           "hex": "#F5F0E8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16.png"
+            "/products/iphone-16.png"
           ]
         },
         {
           "name": "Pink",
           "hex": "#F2C9C5",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16.png"
+            "/products/iphone-16.png"
           ]
         },
         {
           "name": "Teal",
           "hex": "#4A8580",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16.png"
+            "/products/iphone-16.png"
           ]
         },
         {
           "name": "Ultramarine",
           "hex": "#3D5680",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16.png"
+            "/products/iphone-16.png"
           ]
         }
       ],
@@ -3727,35 +3727,35 @@
           "name": "Black",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-plus.png"
+            "/products/iphone-16-plus.png"
           ]
         },
         {
           "name": "White",
           "hex": "#F5F0E8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-plus.png"
+            "/products/iphone-16-plus.png"
           ]
         },
         {
           "name": "Pink",
           "hex": "#F2C9C5",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-plus.png"
+            "/products/iphone-16-plus.png"
           ]
         },
         {
           "name": "Teal",
           "hex": "#4A8580",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-plus.png"
+            "/products/iphone-16-plus.png"
           ]
         },
         {
           "name": "Ultramarine",
           "hex": "#3D5680",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-plus.png"
+            "/products/iphone-16-plus.png"
           ]
         }
       ],
@@ -4112,28 +4112,28 @@
           "name": "Black Titanium",
           "hex": "#2C2C2E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-pro.png"
+            "/products/iphone-16-pro.png"
           ]
         },
         {
           "name": "White Titanium",
           "hex": "#E8E8E3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-pro.png"
+            "/products/iphone-16-pro.png"
           ]
         },
         {
           "name": "Natural Titanium",
           "hex": "#B5AFA9",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-pro.png"
+            "/products/iphone-16-pro.png"
           ]
         },
         {
           "name": "Desert Titanium",
           "hex": "#C5A87C",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-pro.png"
+            "/products/iphone-16-pro.png"
           ]
         }
       ],
@@ -4512,28 +4512,28 @@
           "name": "Black Titanium",
           "hex": "#2C2C2E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-pro-max_549742d1-a342-49f8-8c6f-96e85200ed74.png"
+            "/products/iphone-16-pro-max.png"
           ]
         },
         {
           "name": "White Titanium",
           "hex": "#E8E8E3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-pro-max_549742d1-a342-49f8-8c6f-96e85200ed74.png"
+            "/products/iphone-16-pro-max.png"
           ]
         },
         {
           "name": "Natural Titanium",
           "hex": "#B5AFA9",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-pro-max_549742d1-a342-49f8-8c6f-96e85200ed74.png"
+            "/products/iphone-16-pro-max.png"
           ]
         },
         {
           "name": "Desert Titanium",
           "hex": "#C5A87C",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-16-pro-max_549742d1-a342-49f8-8c6f-96e85200ed74.png"
+            "/products/iphone-16-pro-max.png"
           ]
         }
       ],
@@ -4824,14 +4824,14 @@
           "name": "Black",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17e.png"
+            "/products/iphone-17e.png"
           ]
         },
         {
           "name": "White",
           "hex": "#F5F0E8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17e.png"
+            "/products/iphone-17e.png"
           ]
         }
       ],
@@ -4898,35 +4898,35 @@
           "name": "Black",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17.png"
+            "/products/iphone-17.png"
           ]
         },
         {
           "name": "Green",
           "hex": "#4A7A5C",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17.png"
+            "/products/iphone-17.png"
           ]
         },
         {
           "name": "White",
           "hex": "#F5F0E8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17.png"
+            "/products/iphone-17.png"
           ]
         },
         {
           "name": "Blue",
           "hex": "#3D6A8A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17.png"
+            "/products/iphone-17.png"
           ]
         },
         {
           "name": "Purple",
           "hex": "#6A5F8A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17.png"
+            "/products/iphone-17.png"
           ]
         }
       ],
@@ -5053,28 +5053,28 @@
           "name": "Black",
           "hex": "#1C1C1E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-air-black-generic.png"
+            "/products/iphone-17-air.png"
           ]
         },
         {
           "name": "Blue",
           "hex": "#3D6A8A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-air-black-generic.png"
+            "/products/iphone-17-air.png"
           ]
         },
         {
           "name": "White",
           "hex": "#F5F0E8",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-air-black-generic.png"
+            "/products/iphone-17-air.png"
           ]
         },
         {
           "name": "Gold",
           "hex": "#D4A853",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-air-black-generic.png"
+            "/products/iphone-17-air.png"
           ]
         }
       ],
@@ -5221,21 +5221,21 @@
           "name": "Silver",
           "hex": "#E8E8E3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-pro.png"
+            "/products/iphone-17-pro.png"
           ]
         },
         {
           "name": "Blue",
           "hex": "#3D5E7D",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-pro.png"
+            "/products/iphone-17-pro.png"
           ]
         },
         {
           "name": "Orange",
           "hex": "#D4703A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-pro.png"
+            "/products/iphone-17-pro.png"
           ]
         }
       ],
@@ -5352,21 +5352,21 @@
           "name": "Silver",
           "hex": "#E8E8E3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-pro-max.png"
+            "/products/iphone-17-pro-max.png"
           ]
         },
         {
           "name": "Blue",
           "hex": "#3D5E7D",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-pro-max.png"
+            "/products/iphone-17-pro-max.png"
           ]
         },
         {
           "name": "Orange",
           "hex": "#D4703A",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-17-pro-max.png"
+            "/products/iphone-17-pro-max.png"
           ]
         }
       ],
@@ -5513,28 +5513,28 @@
           "name": "Black Titanium",
           "hex": "#2C2C2E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-18-pro.png"
+            "/products/iphone-18-pro.png"
           ]
         },
         {
           "name": "White Titanium",
           "hex": "#E8E8E3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-18-pro.png"
+            "/products/iphone-18-pro.png"
           ]
         },
         {
           "name": "Natural Titanium",
           "hex": "#B5AFA9",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-18-pro.png"
+            "/products/iphone-18-pro.png"
           ]
         },
         {
           "name": "Desert Titanium",
           "hex": "#C5A87C",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-18-pro.png"
+            "/products/iphone-18-pro.png"
           ]
         }
       ],
@@ -5681,28 +5681,28 @@
           "name": "Black Titanium",
           "hex": "#2C2C2E",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-18-pro-max.png"
+            "/products/iphone-18-pro-max.png"
           ]
         },
         {
           "name": "White Titanium",
           "hex": "#E8E8E3",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-18-pro-max.png"
+            "/products/iphone-18-pro-max.png"
           ]
         },
         {
           "name": "Natural Titanium",
           "hex": "#B5AFA9",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-18-pro-max.png"
+            "/products/iphone-18-pro-max.png"
           ]
         },
         {
           "name": "Desert Titanium",
           "hex": "#C5A87C",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0838/9355/1414/files/iphone-18-pro-max.png"
+            "/products/iphone-18-pro-max.png"
           ]
         }
       ],

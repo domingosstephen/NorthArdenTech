@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { SpecRail } from "@/components/ui";
 import { SectionReveal } from "@/components/pdp/SectionReveal";
@@ -52,14 +53,8 @@ export function LineupRail({ families }: LineupRailProps) {
           </Link>
         </div>
 
-        {/* Rail container with scroll arrows */}
         <div className="group relative">
-          {/* Prev arrow */}
-          <ScrollArrow
-            direction="prev"
-            onClick={() => scrollBy("prev")}
-            className="left-0 -translate-x-1/2"
-          />
+          <ScrollArrow direction="prev" onClick={() => scrollBy("prev")} className="left-0 -translate-x-1/2" />
 
           <ul
             ref={railRef}
@@ -67,45 +62,52 @@ export function LineupRail({ families }: LineupRailProps) {
             style={{ scrollSnapType: "x mandatory", scrollbarWidth: "none" }}
             aria-label="Current iPhone lineup"
           >
-            {families.map((family) => (
+            {families.map((family, i) => (
               <li
                 key={family.slug}
                 className="shrink-0 w-[200px]"
                 style={{ scrollSnapAlign: "start" }}
               >
-                <RailCard family={family} />
+                <RailCard family={family} priority={i < 4} />
               </li>
             ))}
           </ul>
 
-          {/* Next arrow */}
-          <ScrollArrow
-            direction="next"
-            onClick={() => scrollBy("next")}
-            className="right-0 translate-x-1/2"
-          />
+          <ScrollArrow direction="next" onClick={() => scrollBy("next")} className="right-0 translate-x-1/2" />
         </div>
       </section>
     </SectionReveal>
   );
 }
 
-function RailCard({ family }: { family: Family }) {
+function RailCard({ family, priority }: { family: Family; priority?: boolean }) {
   const specFacts = [
     { label: "Chip", value: family.specs.chip },
     { label: "Display", value: family.specs.display },
   ];
+
+  const firstImageUrl = family.finishes[0]?.images?.[0];
+  const hasRealImage = firstImageUrl && !firstImageUrl.startsWith("[");
 
   return (
     <Link
       href={`/iphone/${family.slug}`}
       className="flex flex-col rounded-[14px] border border-line bg-bg hover:border-ink-2 transition-colors duration-[120ms] overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent h-full"
     >
-      {/* Image */}
-      <div className="aspect-square bg-surface flex items-center justify-center">
-        <RailSilhouette name={family.name} />
+      <div className="relative aspect-square bg-surface flex items-center justify-center overflow-hidden">
+        {hasRealImage ? (
+          <Image
+            src={firstImageUrl}
+            alt={family.name}
+            fill
+            sizes="200px"
+            className="object-contain p-3"
+            priority={priority}
+          />
+        ) : (
+          <RailSilhouette name={family.name} />
+        )}
       </div>
-      {/* Info */}
       <div className="p-3 flex flex-col gap-1.5">
         <p className="text-[15px] font-semibold text-ink leading-tight">{family.name}</p>
         <SpecRail facts={specFacts} condensed className="text-[11px]" />
@@ -122,13 +124,7 @@ function RailCard({ family }: { family: Family }) {
 
 function RailSilhouette({ name }: { name: string }) {
   return (
-    <svg
-      viewBox="0 0 120 240"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden
-      className="h-[60%] w-auto"
-    >
+    <svg viewBox="0 0 120 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden className="h-[60%] w-auto">
       <rect x="3" y="3" width="114" height="234" rx="20" fill="var(--surface)" stroke="var(--line)" strokeWidth="2" />
       <rect x="10" y="16" width="100" height="208" rx="12" fill="var(--line)" />
       <rect x="44" y="22" width="32" height="9" rx="4.5" fill="var(--surface)" />
@@ -139,15 +135,7 @@ function RailSilhouette({ name }: { name: string }) {
   );
 }
 
-function ScrollArrow({
-  direction,
-  onClick,
-  className,
-}: {
-  direction: "prev" | "next";
-  onClick: () => void;
-  className?: string;
-}) {
+function ScrollArrow({ direction, onClick, className }: { direction: "prev" | "next"; onClick: () => void; className?: string }) {
   return (
     <button
       onClick={onClick}
@@ -160,9 +148,7 @@ function ScrollArrow({
         "opacity-0 group-hover:opacity-100",
         "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
         className,
-      ]
-        .filter(Boolean)
-        .join(" ")}
+      ].filter(Boolean).join(" ")}
     >
       {direction === "prev" ? (
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>

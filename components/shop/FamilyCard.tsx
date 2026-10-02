@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { SpecRail, Swatch } from "@/components/ui";
 import type { Family } from "@/lib/commerce/types";
@@ -42,17 +43,29 @@ export function FamilyCard({ family }: FamilyCardProps) {
     { label: "Camera", value: family.specs.camera },
   ];
 
+  const firstImageUrl = family.finishes[0]?.images?.[0];
+  const hasRealImage = firstImageUrl && !firstImageUrl.startsWith("[");
+
   return (
     <Link
       href={`/iphone/${family.slug}`}
       className="group flex flex-col rounded-[16px] border border-line bg-bg hover:border-ink-2 transition-colors duration-[120ms] overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
-      {/* Image — 1:1 device silhouette */}
+      {/* Image */}
       <div className="relative aspect-square bg-surface flex items-center justify-center overflow-hidden">
-        <DeviceSilhouette name={family.name} />
-        {/* Status badge */}
+        {hasRealImage ? (
+          <Image
+            src={firstImageUrl}
+            alt={family.name}
+            fill
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            className="object-contain p-4"
+          />
+        ) : (
+          <DeviceSilhouette name={family.name} />
+        )}
         {family.status === "preorder" && (
-          <span className="absolute top-3 left-3 bg-warn text-white text-[11px] font-semibold px-2 py-0.5 rounded-full">
+          <span className="absolute top-3 left-3 bg-warn text-white text-[11px] font-semibold px-2 py-0.5 rounded-full z-10">
             Pre-order
           </span>
         )}
@@ -64,7 +77,6 @@ export function FamilyCard({ family }: FamilyCardProps) {
 
         <SpecRail facts={specFacts} condensed className="text-[12px]" />
 
-        {/* Finish dots */}
         {family.finishes.length > 0 && (
           <div className="flex items-center gap-1.5 mt-1" aria-label="Available finishes">
             {family.finishes.slice(0, 6).map((f) => (
@@ -80,7 +92,6 @@ export function FamilyCard({ family }: FamilyCardProps) {
           </div>
         )}
 
-        {/* Price */}
         <p
           className="mt-auto pt-2 text-[15px] font-semibold text-ink"
           style={{ fontFeatureSettings: '"tnum" 1' }}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import type { Family } from "@/lib/commerce/types";
 
@@ -25,11 +26,13 @@ export function Gallery({ family, selectedFinish }: GalleryProps) {
           className="absolute inset-0 flex items-center justify-center"
         >
           {hasRealImage ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
+            <Image
               src={imageUrl}
               alt={`${family.name} in ${finish?.name}`}
-              className="w-full h-full object-contain"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-contain p-6"
+              priority
             />
           ) : (
             <DeviceSilhouette name={family.name} />
@@ -49,24 +52,10 @@ function DeviceSilhouette({ name }: { name: string }) {
       aria-hidden
       className="h-[60%] w-auto"
     >
-      {/* Body */}
-      <rect
-        x="4" y="4" width="192" height="392" rx="28"
-        fill="var(--surface)" stroke="var(--line)" strokeWidth="3"
-      />
-      {/* Screen */}
+      <rect x="4" y="4" width="192" height="392" rx="28" fill="var(--surface)" stroke="var(--line)" strokeWidth="3" />
       <rect x="14" y="24" width="172" height="352" rx="18" fill="var(--line)" />
-      {/* Dynamic Island / notch placeholder */}
       <rect x="76" y="32" width="48" height="12" rx="6" fill="var(--surface)" />
-      {/* Family label */}
-      <text
-        x="100" y="210"
-        textAnchor="middle"
-        dominantBaseline="middle"
-        fontSize="18"
-        fill="var(--ink-2)"
-        fontFamily="system-ui, sans-serif"
-      >
+      <text x="100" y="210" textAnchor="middle" dominantBaseline="middle" fontSize="18" fill="var(--ink-2)" fontFamily="system-ui, sans-serif">
         {name.replace("iPhone ", "")}
       </text>
     </svg>
