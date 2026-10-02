@@ -26,14 +26,18 @@ export function Gallery({ family, selectedFinish }: GalleryProps) {
           className="absolute inset-0 flex items-center justify-center"
         >
           {hasRealImage ? (
-            <Image
-              src={imageUrl}
-              alt={`${family.name} in ${finish?.name}`}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-contain p-6"
-              priority
-            />
+            <div className="absolute inset-6">
+              <div className="relative w-full h-full">
+                <Image
+                  src={imageUrl}
+                  alt={`${family.name} in ${finish?.name}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
           ) : (
             <DeviceSilhouette name={family.name} />
           )}
@@ -45,13 +49,7 @@ export function Gallery({ family, selectedFinish }: GalleryProps) {
 
 function DeviceSilhouette({ name }: { name: string }) {
   return (
-    <svg
-      viewBox="0 0 200 400"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden
-      className="h-[60%] w-auto"
-    >
+    <svg viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden className="h-[60%] w-auto">
       <rect x="4" y="4" width="192" height="392" rx="28" fill="var(--surface)" stroke="var(--line)" strokeWidth="3" />
       <rect x="14" y="24" width="172" height="352" rx="18" fill="var(--line)" />
       <rect x="76" y="32" width="48" height="12" rx="6" fill="var(--surface)" />

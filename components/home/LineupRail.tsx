@@ -7,55 +7,35 @@ import { SpecRail } from "@/components/ui";
 import { SectionReveal } from "@/components/pdp/SectionReveal";
 import type { Family } from "@/lib/commerce/types";
 
-interface LineupRailProps {
-  families: Family[];
-}
-
 function lowestPrice(family: Family): string {
-  const prices = family.variants
-    .filter((v) => !v.placeholder && v.price > 0)
-    .map((v) => v.price);
+  const prices = family.variants.filter((v) => !v.placeholder && v.price > 0).map((v) => v.price);
   if (prices.length === 0) return "From [PRICE]";
   return `From $${Math.min(...prices).toLocaleString()}`;
 }
 
-export function LineupRail({ families }: LineupRailProps) {
+export function LineupRail({ families }: { families: Family[] }) {
   const railRef = useRef<HTMLUListElement>(null);
 
   function scrollBy(direction: "prev" | "next") {
     if (!railRef.current) return;
     const cardWidth = railRef.current.firstElementChild?.clientWidth ?? 220;
-    railRef.current.scrollBy({
-      left: direction === "next" ? cardWidth + 16 : -(cardWidth + 16),
-      behavior: "smooth",
-    });
+    railRef.current.scrollBy({ left: direction === "next" ? cardWidth + 16 : -(cardWidth + 16), behavior: "smooth" });
   }
 
   return (
     <SectionReveal>
-      <section
-        className="mx-auto px-4 py-14"
-        style={{ maxWidth: "var(--max-w-content)" }}
-        aria-labelledby="lineup-heading"
-      >
+      <section className="mx-auto px-4 py-14" style={{ maxWidth: "var(--max-w-content)" }} aria-labelledby="lineup-heading">
         <div className="flex items-baseline justify-between mb-6">
-          <h2
-            id="lineup-heading"
-            className="text-[28px] font-semibold text-ink tracking-[-0.02em]"
-          >
+          <h2 id="lineup-heading" className="text-[28px] font-semibold text-ink tracking-[-0.02em]">
             The current lineup.
           </h2>
-          <Link
-            href="/iphone"
-            className="text-[14px] text-accent hover:text-accent-press transition-colors duration-[120ms] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-          >
+          <Link href="/iphone" className="text-[14px] text-accent hover:text-accent-press transition-colors duration-[120ms] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
             See all →
           </Link>
         </div>
 
         <div className="group relative">
           <ScrollArrow direction="prev" onClick={() => scrollBy("prev")} className="left-0 -translate-x-1/2" />
-
           <ul
             ref={railRef}
             className="flex gap-4 overflow-x-auto scroll-smooth pb-2 -mx-1 px-1"
@@ -63,16 +43,11 @@ export function LineupRail({ families }: LineupRailProps) {
             aria-label="Current iPhone lineup"
           >
             {families.map((family, i) => (
-              <li
-                key={family.slug}
-                className="shrink-0 w-[200px]"
-                style={{ scrollSnapAlign: "start" }}
-              >
+              <li key={family.slug} className="shrink-0 w-[200px]" style={{ scrollSnapAlign: "start" }}>
                 <RailCard family={family} priority={i < 4} />
               </li>
             ))}
           </ul>
-
           <ScrollArrow direction="next" onClick={() => scrollBy("next")} className="right-0 translate-x-1/2" />
         </div>
       </section>
@@ -94,27 +69,30 @@ function RailCard({ family, priority }: { family: Family; priority?: boolean }) 
       href={`/iphone/${family.slug}`}
       className="flex flex-col rounded-[14px] border border-line bg-bg hover:border-ink-2 transition-colors duration-[120ms] overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent h-full"
     >
-      <div className="relative aspect-square bg-surface flex items-center justify-center overflow-hidden">
+      <div className="relative aspect-square bg-surface overflow-hidden">
         {hasRealImage ? (
-          <Image
-            src={firstImageUrl}
-            alt={family.name}
-            fill
-            sizes="200px"
-            className="object-contain p-3"
-            priority={priority}
-          />
+          <div className="absolute inset-4">
+            <div className="relative w-full h-full">
+              <Image
+                src={firstImageUrl}
+                alt={family.name}
+                fill
+                sizes="200px"
+                className="object-contain"
+                priority={priority}
+              />
+            </div>
+          </div>
         ) : (
-          <RailSilhouette name={family.name} />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <RailSilhouette name={family.name} />
+          </div>
         )}
       </div>
       <div className="p-3 flex flex-col gap-1.5">
         <p className="text-[15px] font-semibold text-ink leading-tight">{family.name}</p>
         <SpecRail facts={specFacts} condensed className="text-[11px]" />
-        <p
-          className="text-[13px] font-semibold text-ink mt-1"
-          style={{ fontFeatureSettings: '"tnum" 1' }}
-        >
+        <p className="text-[13px] font-semibold text-ink mt-1" style={{ fontFeatureSettings: '"tnum" 1' }}>
           {lowestPrice(family)}
         </p>
       </div>
@@ -140,24 +118,12 @@ function ScrollArrow({ direction, onClick, className }: { direction: "prev" | "n
     <button
       onClick={onClick}
       aria-label={direction === "prev" ? "Scroll left" : "Scroll right"}
-      className={[
-        "absolute top-1/2 -translate-y-1/2 z-10",
-        "hidden md:flex items-center justify-center",
-        "w-10 h-10 rounded-full bg-bg border border-line shadow-sm",
-        "text-ink hover:text-ink/70 transition-[opacity,colors] duration-[120ms]",
-        "opacity-0 group-hover:opacity-100",
-        "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
-        className,
-      ].filter(Boolean).join(" ")}
+      className={["absolute top-1/2 -translate-y-1/2 z-10", "hidden md:flex items-center justify-center", "w-10 h-10 rounded-full bg-bg border border-line shadow-sm", "text-ink hover:text-ink/70 transition-[opacity,colors] duration-[120ms]", "opacity-0 group-hover:opacity-100", "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent", className].filter(Boolean).join(" ")}
     >
       {direction === "prev" ? (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
-          <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden><path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" /></svg>
       ) : (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
-          <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden><path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" /></svg>
       )}
     </button>
   );
